@@ -724,6 +724,37 @@ margin-bottom:9px;
 .icon-link:focus{
     background-color: var(--accent-color);
 }
+.footer-subscribe{
+    margin-left: 93px;
+}
+.footer-subscribe-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+}
+.btn-sub{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        background-color: var(--accent-color);    
+        color: var(--white-color);
+}
+
+.icon-footer-sub{
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
 
 /* ============Foter */
 
