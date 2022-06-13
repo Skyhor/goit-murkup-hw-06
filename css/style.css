@@ -280,10 +280,10 @@ justify-content:space-between;
     height: 18px;
 }
 
-.form-in-modal{
-position: absolute;
-top: 40px;
-left: 41px;
+.form-in-modal {
+    position: fixed;
+    top: 40px;
+    left: 41px;
 }
 .modal-title {
     font-weight: 700;
@@ -291,7 +291,19 @@ left: 41px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
 }
+.modal-list{
+    display: flex;
+    flex-direction: column;
+}
+.modal-list-name{
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: var(--contact-color);
+}
+
 .icon-modal{
     width: 18px;
     height: 18px;
