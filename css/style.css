@@ -280,6 +280,23 @@ justify-content:space-between;
     height: 18px;
 }
 
+.form-in-modal{
+position: absolute;
+top: 40px;
+left: 41px;
+}
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.icon-modal{
+    width: 18px;
+    height: 18px;
+}
+
 .section {
     padding: 94px 0;
 }
@@ -748,6 +765,7 @@ margin-bottom:9px;
         letter-spacing: 0.06em;
         background-color: var(--accent-color);    
         color: var(--white-color);
+        margin-right: 10px;
 }
 
 .icon-footer-sub{
