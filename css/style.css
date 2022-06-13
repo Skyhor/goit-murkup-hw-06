@@ -245,7 +245,7 @@ justify-content:space-between;
 
 .modal {
     position: absolute;
-    top: 50%;
+    top: 110%;
     left: 50%;
  
    min-width: 528px;
@@ -302,6 +302,12 @@ justify-content:space-between;
         line-height: 14px;
         letter-spacing: 0.01em;
         color: var(--contact-color);
+        
+}
+.modal-list input{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        height: 40px;
 }
 
 .icon-modal{
