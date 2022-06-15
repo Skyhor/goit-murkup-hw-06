@@ -81,72 +81,6 @@
           <button type="button" class="hero-button" data-modal-open>
             Заказать услугу
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button type="button" class="close-button" data-modal-close>
-                <svg class="modal-close">
-                  <use
-                    href="./img/icons.svg/symbol-defs.svg#icon-close-black"
-                  ></use>
-                </svg>
-              </button>
-              <form class="form-in-modal">
-                <h2 class="modal-title">
-                  Оставьте свои данные, мы вам перезвоним
-                </h2>
-                <div class="modal-list">
-                  <label for="name" class="modal-list-name">Имя</label>
-                    <svg class="icon-modal">
-                      <use
-                        href="./img/icons.svg/symbol-defs.svg#icon-person-black"
-                      ></use>
-                    </svg>
-                    <input type="name" name="name" id="name" />
-                </div>
-                 <div class="modal-list">
-                  <label for="tel" class="modal-list-name">Телефон</label>
-                    <svg class="icon-modal">
-                      <use
-                        href="./img/icons.svg/symbol-defs.svg#icon-phone-black"
-                      ></use>
-                    </svg>
-                    <input type="tel" name="tel" id="tel" />
-                </div>
-                 <div class="modal-list">
-                  <label for="mail" class="modal-list-name">Имя</label>
-                    <svg class="icon-modal">
-                      <use
-                        href="./img/icons.svg/symbol-defs.svg#icon-email-black"
-                      ></use>
-                    </svg>
-                    <input type="email" name="mail" id="mail" />
-                </div>
-
-
-
-                 <div class="modal-list">
-                  <label for="comment" class="modal-list-name">Комментарий</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                </div>
-                
-                  <ul class="topic-optical">
-                    <li class="list">
-                      <input
-                        type="checkbox"
-                        name="topic"
-                        value="agrre"
-                        id="agrre"
-                      />
-                      <label for="agrre"
-                        >Соглашаюсь с рассылкой и принимаю
-                        <a href="" class="argre"> Условия договора</a></label
-                      >
-                    </li>
-                  </ul>
-                </ul>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -715,6 +649,71 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <svg class="modal-close">
+            <use href="./img/icons.svg/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <form class="form-in-modal">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <div class="modal-list">
+            <label for="name" class="modal-list-name">Имя</label>
+            <svg class="icon-modal">
+              <use
+                href="./img/icons.svg/symbol-defs.svg#icon-person-black"
+              ></use>
+            </svg>
+            <input type="name" name="name" id="name" />
+          </div>
+          <div class="modal-list">
+            <label for="tel" class="modal-list-name">Телефон</label>
+            <svg class="icon-modal">
+              <use
+                href="./img/icons.svg/symbol-defs.svg#icon-phone-black"
+              ></use>
+            </svg>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="modal-list">
+            <label for="mail" class="modal-list-name">Имя</label>
+            <svg class="icon-modal">
+              <use
+                href="./img/icons.svg/symbol-defs.svg#icon-email-black"
+              ></use>
+            </svg>
+            <input type="email" name="mail" id="mail" />
+          </div>
+
+          <div class="modal-list">
+            <label for="comment" class="modal-list-name">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <ul class="topic-optical">
+            <li class="list">
+              <input type="checkbox" name="topic" value="agrre" id="agrre" />
+              <label for="agrre"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="argre"> Условия договора</a></label
+              >
+            </li>
+          </ul>
+          <div>
+            <button class="button-modal">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Modal -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
