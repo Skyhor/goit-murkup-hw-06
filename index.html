@@ -666,7 +666,13 @@
                 href="./img/icons.svg/symbol-defs.svg#icon-person-black"
               ></use>
             </svg>
-            <input type="name" name="name" id="name" />
+            <input
+              type="name"
+              name="user-name"
+              id="name"
+              required
+              minlength="2"
+            />
           </div>
           <div class="modal-list">
             <label for="tel" class="modal-list-name">Телефон</label>
@@ -675,40 +681,44 @@
                 href="./img/icons.svg/symbol-defs.svg#icon-phone-black"
               ></use>
             </svg>
-            <input type="tel" name="tel" id="tel" />
+            <input
+              type="tel"
+              name="user-tel"
+              id="tel"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+              class="contact-form-input"
+            />
           </div>
           <div class="modal-list">
-            <label for="mail" class="modal-list-name">Имя</label>
+            <label for="mail" class="modal-list-name">Почта</label>
             <svg class="icon-modal">
               <use
                 href="./img/icons.svg/symbol-defs.svg#icon-email-black"
               ></use>
             </svg>
-            <input type="email" name="mail" id="mail" />
+            <input type="email" name="user-mail" id="mail" required />
           </div>
 
           <div class="modal-list">
             <label for="comment" class="modal-list-name">Комментарий</label>
             <textarea
+              class="modal-message"
               name="comment"
               id="comment"
-              cols="30"
-              rows="10"
               placeholder="Введите текст"
             ></textarea>
           </div>
-
-          <ul class="topic-optical">
-            <li class="list">
-              <input type="checkbox" name="topic" value="agrre" id="agrre" />
-              <label for="agrre"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="" class="argre"> Условия договора</a></label
-              >
-            </li>
-          </ul>
-          <div>
-            <button class="button-modal">Отправить</button>
+          <fieldset class="topic-optical">
+            <input type="checkbox" name="topic" value="agrre" id="agrre" />
+            <label for="agrre"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="argre"> Условия договора</a></label
+            >
+          </fieldset>
+          <div class="button-modal">
+            <button type="submit" class="button-modal-send">Отправить</button>
           </div>
         </form>
       </div>
