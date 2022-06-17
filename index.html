@@ -634,9 +634,15 @@
         </div>
         <div class="footer-subscribe">
           <h3 class="footer-subscribe-title">Подпишитесь на рассылку</h3>
-          <div class="subscribe">
+          <form class="subscribe">
             <label for="mail"></label>
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+              class="footer-mail"
+            />
             <button type="button" class="btn-sub">
               Подписаться
               <svg class="icon-footer-sub">
@@ -645,7 +651,7 @@
                 ></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -658,29 +664,26 @@
           </svg>
         </button>
         <form class="form-in-modal">
-          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="modal-list">
-            <label for="name" class="modal-list-name">Имя</label>
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label for="name" class="modal-list-name">Имя</label>
+          <div class="contact-form-input-icon">
+            <input
+              type="text"
+              name="user-name"
+              id="name"
+              required
+              minlength="2"
+              class="contact-form-input"
+            />
             <svg class="icon-modal">
               <use
                 href="./img/icons.svg/symbol-defs.svg#icon-person-black"
               ></use>
             </svg>
-            <input
-              type="name"
-              name="user-name"
-              id="name"
-              required
-              minlength="2"
-            />
           </div>
-          <div class="modal-list">
-            <label for="tel" class="modal-list-name">Телефон</label>
-            <svg class="icon-modal">
-              <use
-                href="./img/icons.svg/symbol-defs.svg#icon-phone-black"
-              ></use>
-            </svg>
+
+          <label for="tel"><span class="modal-list-name"> Телефон</span></label>
+          <div class="contact-form-input-icon">
             <input
               type="tel"
               name="user-tel"
@@ -690,29 +693,46 @@
               title="xxx-xxx-xx-xx"
               class="contact-form-input"
             />
+            <svg class="icon-modal">
+              <use
+                href="./img/icons.svg/symbol-defs.svg#icon-phone-black"
+              ></use>
+            </svg>
           </div>
-          <div class="modal-list">
-            <label for="mail" class="modal-list-name">Почта</label>
+          <label for="mail"><span class="modal-list-name">Почта</span></label>
+          <div class="contact-form-input-icon">
+            <input
+              type="email"
+              name="user-mail"
+              id="mail"
+              required
+              class="contact-form-input"
+            />
             <svg class="icon-modal">
               <use
                 href="./img/icons.svg/symbol-defs.svg#icon-email-black"
               ></use>
             </svg>
-            <input type="email" name="user-mail" id="mail" required />
           </div>
 
-          <div class="modal-list">
-            <label for="comment" class="modal-list-name">Комментарий</label>
-            <textarea
-              class="modal-message"
-              name="comment"
-              id="comment"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
+          <label for="comment"
+            ><span class="modal-list-name">Комментарий</span></label
+          >
+          <textarea
+            class="modal-message"
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+          ></textarea>
           <fieldset class="topic-optical">
-            <input type="checkbox" name="topic" value="agrre" id="agrre" />
-            <label for="agrre"
+            <input
+              type="checkbox"
+              name="topic"
+              value="agrre"
+              id="agrre"
+              class="checkbox"
+            />
+            <label for="agrre" class="checkbox-agrre"
               >Соглашаюсь с рассылкой и принимаю
               <a href="" class="argre"> Условия договора</a></label
             >
