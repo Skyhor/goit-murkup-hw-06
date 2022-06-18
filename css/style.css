@@ -899,6 +899,9 @@ border: none;
 
 
 }
+.checkbox:checked + .checkbox-agrre::before{
+    background-color: var(--accent-color);
+}
 
 .button-modal {
     display: flex;
