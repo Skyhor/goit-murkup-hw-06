@@ -645,10 +645,8 @@
             />
             <button type="button" class="btn-sub">
               Подписаться
-              <svg class="icon-footer-sub">
-                <use
-                  href="./img/icons.svg/symbol-defs.svg#icon-icon-send"
-                ></use>
+              <svg class="icon-footer-sub" width="24px" height="24px">
+                <use href="./img/icons.svg/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
           </form>
@@ -727,10 +725,11 @@
           <fieldset class="topic-optical">
             <input
               type="checkbox"
-              name="topic"
+              name="user-policy"
               value="agrre"
               id="agrre"
               class="checkbox visually-hidden"
+              required
             />
             <label for="agrre" class="checkbox-agrre"
               >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="argre">
@@ -738,9 +737,7 @@
               >
             </label>
           </fieldset>
-          <div class="button-modal">
-            <button type="submit" class="button-modal-send">Отправить</button>
-          </div>
+          <button type="submit" class="button-modal-send">Отправить</button>
         </form>
       </div>
     </div>

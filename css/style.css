@@ -738,7 +738,7 @@ margin-bottom:9px;
 
 
 .icon-footer-sub{
-    margin-left: 10px;
+    margin-left:10px;
     width: 24px;
     height: 24px;
 }
@@ -920,23 +920,15 @@ border: none;
 outline: 1px solid #188CE8;
 }
 
-
-.button-modal {
-    display: flex;
-    justify-content: center;
-}
 .button-modal-send{
-    width: 200px;
-    height: 50px;
+    min-width: 200px;
+    min-height: 50px;
     margin-top: 30px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    border: none;
+    align-self: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent-color);
@@ -949,7 +941,8 @@ outline: 1px solid #188CE8;
 
 .button-modal-send:hover,
 .button-modal-send:focus {
-    background-color: #188CE8
+    background-color: #188CE8;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
