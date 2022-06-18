@@ -735,6 +735,10 @@ margin-bottom:9px;
         padding: 0;
         margin-left: 12px;
 }
+.btn-sub:hover,
+.btn-sub:focus{
+    background-color:#188CE8;
+}
 
 
 .icon-footer-sub{
