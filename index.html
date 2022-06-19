@@ -680,7 +680,7 @@
             </svg>
           </div>
 
-          <label for="tel"><span class="modal-list-name"> Телефон</span></label>
+          <label for="tel" class="modal-list-name">Телефон</label>
           <div class="contact-form-input-icon">
             <input
               type="tel"
@@ -697,12 +697,12 @@
               ></use>
             </svg>
           </div>
-          <label for="mail"><span class="modal-list-name">Почта</span></label>
+          <label for="mailmodal" class="modal-list-name">Почта</label>
           <div class="contact-form-input-icon">
             <input
               type="email"
               name="user-mail"
-              id="mail"
+              id="mailmodal"
               required
               class="contact-form-input"
             />
@@ -722,21 +722,19 @@
             id="comment"
             placeholder="Введите текст"
           ></textarea>
-          <fieldset class="topic-optical">
-            <input
-              type="checkbox"
-              name="user-policy"
-              value="agrre"
-              id="agrre"
-              class="checkbox visually-hidden"
-              required
-            />
-            <label for="agrre" class="checkbox-agrre"
-              >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="argre">
-                Условия договора</a
-              >
-            </label>
-          </fieldset>
+          <input
+            type="checkbox"
+            name="user-policy"
+            value="agrre"
+            id="agrre"
+            class="checkbox visually-hidden"
+            required
+          />
+          <label for="agrre" class="checkbox-agrre"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="argre">
+              Условия договора</a
+            >
+          </label>
           <button type="submit" class="button-modal-send">Отправить</button>
         </form>
       </div>
